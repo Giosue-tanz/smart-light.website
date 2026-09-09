@@ -125,49 +125,37 @@ export default function SmartLightPage() {
                 </div>
             </section>
 
-            {/* Update Notice Section */}
-            <section id="smartlight-update-notice" className="smartlight-cover observe-animate tech-section" style={{ '--animate-delay': '100ms' }}>
-                <img
-                    src={Topografia}
-                    alt=""
-                    className="smartlight-cover-video-bg"
-                    onLoad={(e) => e.target.classList.add('loaded')}
-                    style={{ objectFit: 'cover' }}
-                />
+            {/* Update Notice Section - Minimalist & Colorful */}
+            <section id="smartlight-update-notice" className="smartlight-cover observe-animate" style={{ '--animate-delay': '100ms', backgroundColor: '#050505', position: 'relative', minHeight: 'auto', padding: '140px 5vw', overflow: 'hidden' }}>
                 
-                <div className="smartlight-tech-hud-overlay">
-                    <div className="hud-line scan-line"></div>
-                </div>
+                {/* Subtle Colorful Glows for elegance */}
+                <div style={{ position: 'absolute', top: '-20%', left: '-10%', width: '50vw', height: '50vw', background: 'radial-gradient(circle, rgba(255,107,107,0.1) 0%, rgba(0,0,0,0) 70%)', filter: 'blur(60px)', zIndex: 1, pointerEvents: 'none' }}></div>
+                <div style={{ position: 'absolute', bottom: '-20%', right: '-10%', width: '50vw', height: '50vw', background: 'radial-gradient(circle, rgba(78,205,196,0.1) 0%, rgba(0,0,0,0) 70%)', filter: 'blur(60px)', zIndex: 1, pointerEvents: 'none' }}></div>
 
-                <div className="smartlight-cover-container combined-layout">
-                    <div className="smartlight-tech-glass-card" style={{ maxWidth: '950px', margin: '0 auto', padding: '70px', background: 'rgba(255, 255, 255, 0.75)' }}>
-                        <div className="tech-card-glow"></div>
+                <div className="smartlight-update-container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', zIndex: 2, position: 'relative' }}>
+                    <span style={{ background: 'linear-gradient(90deg, #FF6B6B, #4ECDC4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontSize: '0.9rem', fontWeight: '700', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '25px', display: 'block' }}>Project Update</span>
+                    
+                    <h2 style={{ fontSize: '3.6rem', fontWeight: '800', marginBottom: '15px', color: '#fff', lineHeight: '1.1', letterSpacing: '-1.5px' }}>A Chapter Closes</h2>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.3)', fontSize: '1rem', marginBottom: '60px', fontFamily: 'monospace', letterSpacing: '2px' }}>09/09/2026</p>
+                    
+                    <div style={{ fontSize: '1.25rem', lineHeight: '1.8', color: 'rgba(255, 255, 255, 0.8)', display: 'flex', flexDirection: 'column', gap: '28px', textAlign: 'left', fontWeight: '300' }}>
+                        <p>Every journey has its turning points. Smart Light was one of them — perhaps the most significant one so far.</p>
                         
-                        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '25px', gap: '15px' }}>
-                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00d2ff', boxShadow: '0 0 10px #00d2ff' }}></div>
-                            <span style={{ color: '#000', fontSize: '1.2rem', fontWeight: '800', letterSpacing: '3px', textTransform: 'uppercase' }}>Project Update</span>
-                        </div>
+                        <p>The project was born from a simple but urgent observation: traffic light systems in cities like Pisa are still managed with logic from decades ago, while the technology to change this exists today. The team designed a system based on computer vision, reinforcement learning and IoT sensors, capable of adapting traffic light cycles in real time — reducing waiting times, cutting emissions, and improving safety for pedestrians.</p>
                         
-                        <h2 className="smartlight-tech-title" style={{ fontSize: '3.8rem', letterSpacing: '-2px', marginBottom: '15px' }}>A Chapter Closes</h2>
-                        <p style={{ color: 'rgba(0, 0, 0, 0.6)', fontSize: '1.1rem', marginBottom: '40px', fontFamily: 'monospace', fontWeight: '700' }}>09/09/2026</p>
+                        <p>We won a call for sustainable mobility. We presented at Bright 2025. We met with PISAMO, the Contamination Lab, and people who believed in the idea. It was real.</p>
                         
-                        <div className="smartlight-tech-main-description" style={{ fontSize: '1.25rem', lineHeight: '1.7', fontWeight: '500', color: '#111' }}>
-                            <p style={{ marginBottom: '20px' }}>Every journey has its turning points. Smart Light was one of them — perhaps the most significant one so far.</p>
-                            
-                            <p style={{ marginBottom: '20px' }}>The project was born from a simple but urgent observation: traffic light systems in cities like Pisa are still managed with logic from decades ago, while the technology to change this exists today. The team designed a system based on computer vision, reinforcement learning and IoT sensors, capable of adapting traffic light cycles in real time — reducing waiting times, cutting emissions, and improving safety for pedestrians.</p>
-                            
-                            <p style={{ marginBottom: '20px' }}>We won a call for sustainable mobility. We presented at Bright 2025. We met with PISAMO, the Contamination Lab, and people who believed in the idea. It was real.</p>
-                            
-                            <p style={{ marginBottom: '20px' }}>And yet, today the team has decided to put the project on hold. Not because the idea wasn't valid — it still is. But because life moves forward: the path ahead leads toward a master's degree, new challenges, and new directions that require full commitment.</p>
-                            
-                            <p style={{ marginBottom: '20px' }}>Smart Light remains here, fully documented. The technical plan, the architecture, the research — it's all preserved. You can view the full source code and documentation on the <a href="https://github.com/Giosue-tanz/Smart-Light-pisa" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'underline', fontWeight: '800' }}>GitHub repository</a>, and explore the dedicated <a href="https://giosue-tanz.github.io/smart-light.website/" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'underline', fontWeight: '800' }}>project website</a>.</p>
-                            
-                            <p>If you're someone who sees potential in this project and wants to carry it forward, I'm open to a conversation. Don't hesitate to get in touch.</p>
-                        </div>
+                        <p>And yet, today the team has decided to put the project on hold. Not because the idea wasn't valid — it still is. But because life moves forward: the path ahead leads toward a master's degree, new challenges, and new directions that require full commitment.</p>
+                        
+                        <p>Smart Light remains here, fully documented. The technical plan, the architecture, the research — it's all preserved. You can view the full source code and documentation on the <a href="https://github.com/Giosue-tanz/Smart-Light-pisa" target="_blank" rel="noopener noreferrer" style={{ color: '#4ECDC4', textDecoration: 'none', borderBottom: '1px solid rgba(78, 205, 196, 0.3)', transition: 'border-color 0.3s', paddingBottom: '2px' }} onMouseOver={(e) => e.target.style.borderBottomColor = '#4ECDC4'} onMouseOut={(e) => e.target.style.borderBottomColor = 'rgba(78, 205, 196, 0.3)'}>GitHub repository</a>, and explore the dedicated <a href="https://giosue-tanz.github.io/smart-light.website/" target="_blank" rel="noopener noreferrer" style={{ color: '#4ECDC4', textDecoration: 'none', borderBottom: '1px solid rgba(78, 205, 196, 0.3)', transition: 'border-color 0.3s', paddingBottom: '2px' }} onMouseOver={(e) => e.target.style.borderBottomColor = '#4ECDC4'} onMouseOut={(e) => e.target.style.borderBottomColor = 'rgba(78, 205, 196, 0.3)'}>project website</a>.</p>
+                        
+                        <p>If you're someone who sees potential in this project and wants to carry it forward, I'm open to a conversation. Don't hesitate to get in touch.</p>
+                    </div>
 
-                        <button className="smartlight-cover-btn tech-btn-premium-solid" onClick={() => navigate('/contact')} style={{ marginTop: '20px' }}>
+                    <div style={{ marginTop: '70px' }}>
+                        <button onClick={() => navigate('/contact')} style={{ background: 'linear-gradient(90deg, #FF6B6B, #4ECDC4)', border: 'none', borderRadius: '50px', color: '#fff', padding: '16px 45px', fontSize: '1rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '12px', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }} onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 10px 25px rgba(255, 107, 107, 0.4)'; }} onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
                             CONTACT US
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '20px', height: '20px', marginLeft: '10px' }}>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '20px', height: '20px' }}>
                                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </button>
