@@ -126,33 +126,33 @@ export default function SmartLightPage() {
             </section>
 
             {/* Update Notice Section - Minimalist & Standardized */}
-            <section id="smartlight-update-notice" className="smartlight-cover observe-animate" style={{ '--animate-delay': '100ms', backgroundColor: '#050505', position: 'relative', minHeight: 'auto', padding: '140px 5vw', overflow: 'hidden' }}>
+            <section id="smartlight-update-notice" className="smartlight-cover observe-animate" style={{ '--animate-delay': '100ms', backgroundColor: '#050505', position: 'relative', minHeight: 'auto', padding: '80px 5vw', overflow: 'hidden' }}>
                 
                 {/* Subtle Colorful Glows for elegance */}
                 <div style={{ position: 'absolute', top: '-20%', left: '-10%', width: '50vw', height: '50vw', background: 'radial-gradient(circle, rgba(255,107,107,0.05) 0%, rgba(0,0,0,0) 70%)', filter: 'blur(60px)', zIndex: 1, pointerEvents: 'none' }}></div>
                 <div style={{ position: 'absolute', bottom: '-20%', right: '-10%', width: '50vw', height: '50vw', background: 'radial-gradient(circle, rgba(78,205,196,0.05) 0%, rgba(0,0,0,0) 70%)', filter: 'blur(60px)', zIndex: 1, pointerEvents: 'none' }}></div>
 
-                <div className="smartlight-update-container" style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center', zIndex: 2, position: 'relative', border: '2px solid #fff', borderRadius: '16px', padding: '70px', background: 'rgba(255, 255, 255, 0.02)', backdropFilter: 'blur(10px)' }}>
-                    <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.9rem', fontWeight: '700', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '25px', display: 'block' }}>Project Update</span>
+                <div className="smartlight-update-container" style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center', zIndex: 2, position: 'relative', border: '2px solid #fff', borderRadius: '16px', padding: '50px 6vw', background: 'rgba(255, 255, 255, 0.02)', backdropFilter: 'blur(10px)' }}>
+                    <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.9rem', fontWeight: '700', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '15px', display: 'block' }}>Project Update</span>
                     
-                    <h2 className="smartlight-cover-title" style={{ fontSize: '3.6rem', marginBottom: '15px' }}>A Chapter Closes</h2>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '1rem', marginBottom: '50px', fontFamily: 'monospace', letterSpacing: '2px' }}>09/09/2026</p>
+                    <h2 className="smartlight-cover-title" style={{ fontSize: '3.6rem', marginBottom: '5px' }}>A Chapter Closes</h2>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '1rem', marginBottom: '40px', fontFamily: 'monospace', letterSpacing: '2px' }}>09/09/2026</p>
                     
-                    <div className="smartlight-cover-desc" style={{ fontSize: '1.25rem', lineHeight: '1.8', color: 'rgba(255, 255, 255, 0.9)', display: 'flex', flexDirection: 'column', gap: '28px', textAlign: 'left', fontWeight: '400', maxWidth: '100%', textTransform: 'none' }}>
-                        <p>Every journey has its turning points. Smart Light was one of them — perhaps the most significant one so far.</p>
+                    <div className="smartlight-cover-desc" style={{ fontSize: '1.15rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.9)', textAlign: 'left', fontWeight: '400', maxWidth: '100%', textTransform: 'none', columnWidth: '450px', columnGap: '60px' }}>
+                        <p style={{ marginBottom: '16px' }}>Every journey has its turning points. Smart Light was one of them — perhaps the most significant one so far.</p>
                         
-                        <p>The project was born from a simple but urgent observation: traffic light systems in cities like Pisa are still managed with logic from decades ago, while the technology to change this exists today. The team designed a system based on computer vision, reinforcement learning and IoT sensors, capable of adapting traffic light cycles in real time — reducing waiting times, cutting emissions, and improving safety for pedestrians.</p>
+                        <p style={{ marginBottom: '16px' }}>The project was born from a simple but urgent observation: traffic light systems in cities like Pisa are still managed with logic from decades ago, while the technology to change this exists today. The team designed a system based on computer vision, reinforcement learning and IoT sensors, capable of adapting traffic light cycles in real time — reducing waiting times, cutting emissions, and improving safety for pedestrians.</p>
                         
-                        <p>We won a call for sustainable mobility. We presented at Bright 2025. We met with PISAMO, the Contamination Lab, and people who believed in the idea. It was real.</p>
+                        <p style={{ marginBottom: '16px' }}>We won a call for sustainable mobility. We presented at Bright 2025. We met with PISAMO, the Contamination Lab, and people who believed in the idea. It was real.</p>
                         
-                        <p>And yet, today the team has decided to put the project on hold. Not because the idea wasn't valid — it still is. But because life moves forward: the path ahead leads toward a master's degree, new challenges, and new directions that require full commitment.</p>
+                        <p style={{ marginBottom: '16px' }}>And yet, today the team has decided to put the project on hold. Not because the idea wasn't valid — it still is. But because life moves forward: the path ahead leads toward a master's degree, new challenges, and new directions that require full commitment.</p>
                         
-                        <p>Smart Light remains here, fully documented. The technical plan, the architecture, the research — it's all preserved. You can view the full source code and documentation on the <a href="https://github.com/Giosue-tanz/Smart-Light-pisa" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', fontWeight: '600' }}>GitHub repository</a>, and explore the dedicated <a href="https://giosue-tanz.github.io/smart-light.website/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', fontWeight: '600' }}>project website</a>.</p>
+                        <p style={{ marginBottom: '16px' }}>Smart Light remains here, fully documented. The technical plan, the architecture, the research — it's all preserved. You can view the full source code and documentation on the <a href="https://github.com/Giosue-tanz/Smart-Light-pisa" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', fontWeight: '600' }}>GitHub repository</a>, and explore the dedicated <a href="https://giosue-tanz.github.io/smart-light.website/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', fontWeight: '600' }}>project website</a>.</p>
                         
-                        <p>If you're someone who sees potential in this project and wants to carry it forward, I'm open to a conversation. Don't hesitate to get in touch.</p>
+                        <p style={{ marginBottom: '16px' }}>If you're someone who sees potential in this project and wants to carry it forward, I'm open to a conversation. Don't hesitate to get in touch.</p>
                     </div>
 
-                    <div style={{ marginTop: '70px' }}>
+                    <div style={{ marginTop: '40px' }}>
                         <button className="smartlight-cover-btn" onClick={() => navigate('/contact')}>
                             CONTACT US
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '20px', height: '20px', marginLeft: '10px' }}>
