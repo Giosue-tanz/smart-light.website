@@ -125,6 +125,42 @@ export default function SmartLightPage() {
                 </div>
             </section>
 
+            {/* Update Notice Section */}
+            <section id="smartlight-update-notice" className="smartlight-cover observe-animate" style={{ '--animate-delay': '100ms', minHeight: 'auto', padding: '120px 5vw', backgroundColor: '#050505' }}>
+                <div className="smartlight-update-container" style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'left', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '60px', borderRadius: '16px', backdropFilter: 'blur(20px)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '30px', gap: '15px' }}>
+                        <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#00d2ff', boxShadow: '0 0 10px #00d2ff' }}></div>
+                        <span style={{ color: '#00d2ff', fontSize: '1.1rem', fontWeight: '600', letterSpacing: '2px', textTransform: 'uppercase' }}>Project Update</span>
+                    </div>
+                    
+                    <h2 style={{ fontSize: '3.2rem', fontWeight: '700', marginBottom: '10px', color: '#fff', lineHeight: '1.2', letterSpacing: '-1px' }}>Smart Light — A Chapter Closes</h2>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.5)', fontSize: '1.1rem', marginBottom: '40px', fontFamily: 'monospace' }}>09/09/2026</p>
+                    
+                    <div style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'rgba(255, 255, 255, 0.85)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                        <p>Every journey has its turning points. Smart Light was one of them — perhaps the most significant one so far.</p>
+                        
+                        <p>The project was born from a simple but urgent observation: traffic light systems in cities like Pisa are still managed with logic from decades ago, while the technology to change this exists today. The team designed a system based on computer vision, reinforcement learning and IoT sensors, capable of adapting traffic light cycles in real time — reducing waiting times, cutting emissions, and improving safety for pedestrians.</p>
+                        
+                        <p>We won a call for sustainable mobility. We presented at Bright 2025. We met with PISAMO, the Contamination Lab, and people who believed in the idea. It was real.</p>
+                        
+                        <p>And yet, today the team has decided to put the project on hold. Not because the idea wasn't valid — it still is. But because life moves forward: the path ahead leads toward a master's degree, new challenges, and new directions that require full commitment.</p>
+                        
+                        <p>Smart Light remains here, fully documented. The technical plan, the architecture, the research — it's all preserved. You can view the full source code and documentation on the <a href="https://github.com/Giosue-tanz/Smart-Light-pisa" target="_blank" rel="noopener noreferrer" style={{ color: '#00d2ff', textDecoration: 'none', borderBottom: '1px solid rgba(0, 210, 255, 0.3)', transition: 'border-color 0.3s' }} onMouseOver={(e) => e.target.style.borderBottomColor = '#00d2ff'} onMouseOut={(e) => e.target.style.borderBottomColor = 'rgba(0, 210, 255, 0.3)'}>GitHub repository</a>, and explore the dedicated <a href="https://giosue-tanz.github.io/smart-light.website/" target="_blank" rel="noopener noreferrer" style={{ color: '#00d2ff', textDecoration: 'none', borderBottom: '1px solid rgba(0, 210, 255, 0.3)', transition: 'border-color 0.3s' }} onMouseOver={(e) => e.target.style.borderBottomColor = '#00d2ff'} onMouseOut={(e) => e.target.style.borderBottomColor = 'rgba(0, 210, 255, 0.3)'}>project website</a>.</p>
+                        
+                        <p>If you're someone who sees potential in this project and wants to carry it forward, I'm open to a conversation. Don't hesitate to get in touch.</p>
+                    </div>
+
+                    <div style={{ marginTop: '50px' }}>
+                        <button className="smartlight-cover-btn" onClick={() => navigate('/contact')} style={{ borderColor: '#00d2ff', color: '#00d2ff' }} onMouseOver={(e) => { e.target.style.backgroundColor = '#00d2ff'; e.target.style.color = '#000'; }} onMouseOut={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#00d2ff'; }}>
+                            CONTACT US
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '20px', height: '20px', marginLeft: '10px' }}>
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
             {/* Combined Cover - Goals + Problem/Opportunity (Video C3) */}
             <section id="smartlight-combined-cover" className="smartlight-cover observe-animate" style={{ '--animate-delay': '150ms' }}>
                 <video
