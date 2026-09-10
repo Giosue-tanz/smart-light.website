@@ -112,18 +112,18 @@ export default function SmartLightPage() {
                 <div className="smartlight-cover-overlay"></div>
                 <div className="smartlight-cover-container">
                     <div className="smartlight-cover-content">
-                        <h1 className="smartlight-cover-title" style={{ marginBottom: '24px', letterSpacing: '2px' }}>SMART LIGHT</h1>
-                        <p className="smartlight-cover-desc" style={{ marginBottom: '48px', fontSize: '1.25rem', lineHeight: '1.6', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '750px' }}>
+                        <h1 className="smartlight-cover-title smartlight-main-title">SMART LIGHT</h1>
+                        <p className="smartlight-cover-desc smartlight-main-desc">
                             L'evoluzione della gestione urbana inizia qui. Trasformiamo l'infrastruttura passiva in una rete neurale adattiva, capace di rispondere alle esigenze della città in tempo reale.
                         </p>
-                        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', width: '100%' }}>
-                            <button className="smartlight-cover-btn btn-down" onClick={() => handleArrowClick('#smartlight-combined-cover', 0)} style={{ minWidth: '180px' }}>
+                        <div className="smartlight-cover-actions">
+                            <button className="smartlight-cover-btn btn-down" onClick={() => handleArrowClick('#smartlight-combined-cover', 0)}>
                                 MORE
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
-                            <button className="smartlight-cover-btn btn-down" onClick={() => handleArrowClick('#smartlight-update-notice', 0)} style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', borderColor: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(5px)', minWidth: '180px' }}>
+                            <button className="smartlight-cover-btn btn-down btn-glass" onClick={() => handleArrowClick('#smartlight-update-notice', 0)}>
                                 UPDATE
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
