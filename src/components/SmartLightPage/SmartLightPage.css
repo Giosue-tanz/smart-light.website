@@ -261,10 +261,12 @@ html {
 
 .smartlight-cover-content {
 	max-width: 800px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	color: #fff;
+	box-sizing: border-box;
 }
 
 .smartlight-cover-content-centered {
@@ -1445,11 +1447,14 @@ html {
 	.smartlight-cover-actions {
 		flex-direction: column;
 		gap: 12px;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	
 	.smartlight-cover-btn {
 		width: 100% !important;
-		min-width: 100%;
+		min-width: unset !important;
+		box-sizing: border-box;
 	}
 }
 
