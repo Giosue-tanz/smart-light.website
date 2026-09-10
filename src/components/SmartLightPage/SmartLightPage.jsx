@@ -116,12 +116,20 @@ export default function SmartLightPage() {
                         <p className="smartlight-cover-desc">
                             L'evoluzione della gestione urbana inizia qui. Trasformiamo l'infrastruttura passiva in una rete neurale adattiva, capace di rispondere alle esigenze della città in tempo reale.
                         </p>
-                        <button className="smartlight-cover-btn btn-down" onClick={() => handleArrowClick('#smartlight-combined-cover', 0)}>
-                            MORE
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </button>
+                        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', width: '100%' }}>
+                            <button className="smartlight-cover-btn btn-down" onClick={() => handleArrowClick('#smartlight-combined-cover', 0)}>
+                                MORE
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
+                            <button className="smartlight-cover-btn btn-down" onClick={() => handleArrowClick('#smartlight-update-notice', 0)} style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', borderColor: 'rgba(255, 255, 255, 0.5)' }}>
+                                UPDATE
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
