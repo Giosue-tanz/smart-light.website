@@ -167,6 +167,7 @@ export default function SmartLightPage() {
                         <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1.1rem', lineHeight: '1.7', margin: 0, fontWeight: '400' }}>
                             Il codice e tutto il lavoro svolto saranno presto resi <strong>pubblici su GitHub</strong> e, in parte, condivisi anche su altre piattaforme come <strong>Hugging Face</strong> (modelli addestrati, dataset e documentazione tecnica) ed eventuali altri canali open. L'obiettivo è rendere l'intero progetto consultabile e riutilizzabile da chiunque voglia studiarlo o portarlo avanti.
                         </p>
+                        <p style={{ color: 'rgba(255, 255, 255, 0.45)', fontSize: '0.85rem', fontFamily: 'monospace', letterSpacing: '1.5px', margin: '18px 0 0 0' }}>Ultimo aggiornamento: 06/10/2026</p>
                     </div>
 
                     <div style={{ marginTop: '40px' }}>
