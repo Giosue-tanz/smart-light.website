@@ -161,6 +161,14 @@ export default function SmartLightPage() {
                         <p style={{ marginBottom: '16px' }}>Se sei una persona che vede del potenziale in questo progetto e vuole portarlo avanti, sono aperto a parlarne. Non esitare a contattarmi.</p>
                     </div>
 
+                    {/* Nota: apertura di codice e materiali */}
+                    <div className="smartlight-update-note" style={{ marginTop: '40px', textAlign: 'left', border: '1px solid rgba(255, 255, 255, 0.25)', borderLeft: '3px solid #4ecdc4', borderRadius: '12px', padding: '26px 30px', background: 'rgba(255, 255, 255, 0.04)' }}>
+                        <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', display: 'block', marginBottom: '12px' }}>Nota</span>
+                        <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1.1rem', lineHeight: '1.7', margin: 0, fontWeight: '400' }}>
+                            Il codice e tutto il lavoro svolto saranno presto resi <strong>pubblici su GitHub</strong> e, in parte, condivisi anche su altre piattaforme come <strong>Hugging Face</strong> (modelli addestrati, dataset e documentazione tecnica) ed eventuali altri canali open. L'obiettivo è rendere l'intero progetto consultabile e riutilizzabile da chiunque voglia studiarlo o portarlo avanti.
+                        </p>
+                    </div>
+
                     <div style={{ marginTop: '40px' }}>
                         <button className="smartlight-cover-btn" onClick={() => navigate('/contact')}>
                             CONTATTAMI
